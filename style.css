@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+*{ 
+    padding: 0; 
+    margin: 0 ; 
+    font-family: 'Oswald', sans-serif; 
+} 
+.video-container { 
+    position: relative; 
+  } 
+  .overlay { 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    margin-right: 10px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para resaltar el contenido */ 
+  } 
+.image{ 
+    border-radius: 80%; 
+    margin-left: 50px; 
+    margin-top: 5px; 
+} 
+nav{ 
+    display: flex; 
+    margin-top: 20px; 
+    align-items: flex-end; 
+    margin-right: 0px;
+} 
+ul{ 
+    margin-right: 20px; 
+    margin-left: 5px; 
+    font-size: 3vh; 
+    white-space: nowrap;
+} 
+a 
+{ 
+text-decoration: none; 
+color: whitesmoke; 
+} 
+
+.contenido {
+    position: absolute;
+    top: 50%; /* Alinear al centro verticalmente */
+    left: 30%; /* Alinear al centro horizontalmente */
+    transform: translate(-50%, -50%); /* Centrar el contenido */
+    color: whitesmoke;
+    font-size: 8vh;
+}
+
+.btn2 {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid #fefefe;
+    text-transform: uppercase;
+    color: #fefefe;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.3s;
+    margin-top: 20px;
+  }
+  
+  .btn2::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - -2px);
+    background-color: #212121;
+    transition: 0.3s ease-out;
+    transform: scaleY(1);
+  }
+  
+  .btn2::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - 50px);
+    background-color: #212121;
+    transition: 0.3s ease-out;
+    transform: scaleY(1);
+  }
+  
+  .btn2:hover::before {
+    transform: translateY(-25px);
+    height: 0;
+  }
+  
+  .btn2:hover::after {
+    transform: scaleX(0);
+    transition-delay: 0.15s;
+  }
+  
+  .btn2:hover {
+    border: 2px solid #fefefe;
+  }
+  
+  .btn2 span {
+    position: relative;
+    z-index: 3;
+  }
+  
+  button {
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+  }
+
+  hr {
+    border-radius: 5px;
+    height: 2px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+  }
+
+  
